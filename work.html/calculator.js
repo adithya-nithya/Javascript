@@ -8,7 +8,8 @@ function btnclick(value){
     calculationcomplete=false;
    }
    else{
-    display.value+=value
+    display.value+=value;
+    
    }
 }
 
