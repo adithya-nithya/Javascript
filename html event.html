@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- <label for="name">NAME</label>
+    <input type="text"  id="name" onblur="blurelement()" placeholder="enter your name">
+
+    <button type="button" onclick="btnclick()">button1</button>
+
+    <button type="button" ondblclick="btnclicks()">button2</button><br><br> -->
+
+        <!-- <img onmouseover="imgclick()" src="http://www.jattdisite.com/wp-content/uploads/2015/08/Beautiful-Butterfly.jpg" width="200px" height="200px"><br> -->
+
+        <label for="colors">choose colors</label>
+     <select id="colors" onchange="changecolor()">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+     </select>
+    </form>
+
+    <form onsubmit="return validationform()">
+        <label for="username">username</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="submit">
+        <br><br>
+
+        <label for="number">Phn number</label>
+        <input type="number" id="number" value=""><!--maxlength=10 attribute-->
+         <br><br>
+
+        <labe for="email">Email</labe>
+        <input type="email" id="email" value="" placeholder="enter email">
+    </form>
+
+    <script>
+        // function blurelement(){
+        //       alert("input field has lost focus")
+        // }
+        // function btnclick(){
+        //     alert("you clicked the button")
+        // }
+        // function btnclicks(){
+        //     alert("double clicked")
+        // }
+        // function imgclick(){
+        //     alert("on click img")
+
+        // }
+        // function changecolor(){
+        //     let color=document.getElementById("colors").value;
+        //     alert(`you selected ${color}`)
+        // }
+
+
+        //validation form
+        function validationform() {
+            var username = document.getElementById("username").value;
+
+            var phone = document.getElementById("number").value;
+            var phnregex = /^\d{10}$/;
+
+            var email=document.getElementById("email")
+            var emailcode=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (username.trim() === '') {
+                alert("username cannot be empty")
+                return false;
+            }
+            else if (!phnregex.test(phone)) {
+                alert("please ener exactly 10 numbers")
+                return false;
+
+            }
+            else if(!emailcode.test(email))
+            alert("please enter exact email")
+            return false;
+
+        }
+        return true
+
+    </script>
+</body>
+
+</html>

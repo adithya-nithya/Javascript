@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="color"] {
+    margin-bottom: 20px;
+}
+
+#colorDisplay {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}

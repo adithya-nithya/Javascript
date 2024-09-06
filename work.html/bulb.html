@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <img id="img" width="300px" height="400px" src="http://upload.wikimedia.org/wikipedia/commons/7/7e/2006-02-01_Bulb.jpg"><br>
+    <button onclick="changeon()">ON</button>
+    <button onclick="changeoff()">OFF</button>
+
+    <script>
+        let img=document.getElementById("img")
+        function changeon(){
+            img.src="https://s3.amazonaws.com/images.ecwid.com/images/26558098/1418984167.jpg" 
+        }
+        let img2=document.getElementById("img")
+        function changeoff(){
+            img2.src="http://upload.wikimedia.org/wikipedia/commons/7/7e/2006-02-01_Bulb.jpg"
+        }
+    </script>
+    
+</body>
+</html>

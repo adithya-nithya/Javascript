@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <form>
+        <input type="text" id="display">
+         <input class="button clear" type="button" value="AC" onclick="clearitems()">
+         <input class="button clear" type="button" value="DEL" onclick="clearitems()">
+         <input class="button operator" type="buttom" value="%" onclick="btnclick(value)">
+         <input class="button operator" type="buttom" value="/"onclick="btnclick(value)">
+         <br>
+         <input class="button number" type="buttom" value="7" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="8" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="9" onclick="btnclick(value)">
+         <input class="button operator" type="buttom" value="*"onclick="btnclick(value)" >
+         <br>
+         <input class="button number" type="buttom" value="4" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="5" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="6" onclick="btnclick(value)">
+         <input class="button operator" type="buttom" value="-" onclick="btnclick(value)">
+         <br>
+         <input class="button number" type="buttom" value="1" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="2" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="3" onclick="btnclick(value)">
+         <input class="button operator" type="buttom" value="+" onclick="btnclick(value)">
+         <br>
+         <input class="button number" type="buttom" value="0" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="00" onclick="btnclick(value)">
+         <input class="button number" type="buttom" value="." onclick="btnclick(value)">
+         <input class="button result" type="buttom" value="="onclick="findresult()" >
+        </form>
+
+
+
+    <script src="calculator.js"></script>
+    </div>
+</body>
+</html>

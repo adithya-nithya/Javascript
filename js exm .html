@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  //1) prime number checking
+//     let number=(prompt("enter a number"));
+//     let prime=true;
+//     if(number==1){
+//         console.log("number 1 is not a prime number")
+//     }
+//     else if(number>1){
+//         for(i=2;i<number;i++){
+//             if(number%i==0);{
+//             prime=false;
+//             break;
+//             }
+//         }
+//         if(prime){
+//             console.log(`${number} is prime number`)
+//         }
+//         else{
+//             console.log(`${number} is not prime number`) 
+//         } 
+//     }
+//     else{
+//         console.log(`${number} is not prime number`)
+//     }
+
+
+// //2) Fibonacci series 
+//     let n1=0;
+//     let n2=1;
+//     let newone;
+//     for(i=1;i<=10;i++){
+//         console.log(n1);
+//         newone=n1+n2;
+//         n1=n2;
+//         n2=newone;
+//     }
+
+//3) String is Palindrome or Notfunction 
+// function checkpalindrome(strng){
+    let strng=prompt("enter string")
+    let arrayvalue=strng.split('')
+    let reverse=arrayvalue.reverse('')
+    let reversestring=reverse.join('')
+    if(strng==reversestring){
+ 
+       console.log("palindrome")
+    }
+    else{
+        console.log("not palindrome")
+    }
+// }
+// let strng=prompt("enter string")
+// checkpalindrome(strng)
+
+
+ 
+    
+
+
+    </script>
+</body>
+</html>

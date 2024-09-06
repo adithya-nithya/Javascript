@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //assignment operators
+        let x=10;
+        x+=5;
+        console.log(x);
+        x-=10;
+        console.log(x);
+        x*=10;
+        console.log(x);
+        x/=10;
+        console.log(x);
+        x%=5;
+        console.log(x);
+        x**=10;
+        console.log(x);
+
+
+
+        //comparison variable
+
+        let a=5;
+        let b="5";
+        console.log(a==b);//equal to ,true
+        console.log(a!=b);//not equal,false
+        console.log(a===b);// strict equal to,false
+        console.log(a!==b);//not strict equal,true
+
+        let c=5;
+        let d=4;
+        console.log(c==d);//equal to,false
+        console.log(a!=b);//not equal,true
+        console.log(c===d);// strict equal to,false(true-c=5,d=5)
+        console.log(c!==d);//not strict equal,true
+
+        let e=10;
+        let f=6;
+        console.log(e>f);//true
+        console.log(e<f);//false
+
+        let i=6;
+        let j=19;
+        console.log(i>j);//false
+        console.log(e<f);//true
+
+
+        let g=10;
+        let h=10;
+        console.log(g>=h);//true
+        console.log(g<=h);//true
+
+
+        //logical operators
+
+        //and,or
+
+        let z=5;
+        console.log(z>6 && z<6);//false
+        console.log(z>6 || z<6);//true
+
+        let r =5;
+        console.log(z>4 && z<6);//true
+        console.log(z>4 || z<6);//true
+        
+        let k =5;
+        console.log(z>9 && z<3);//false
+        console.log(z>9 || z<3);//false
+
+        const w = 5, y = 3;
+        console.log((w < 6) && (y < 5));//true
+        console.log((w < 6) || (y < 5));//true
+
+        //not
+
+       let l=2;
+       console.log(!(l==2));//false
+
+       let s=3;
+       console.log(!(l==2));//true
+
+    </script>
+
+
+
+    <p id="id"></p>
+
+    <!-- <script>
+        //ternary operators
+
+       let num1=10;
+       let num2=5;
+       let result=(num1>num2)?"num1 is greater":"num1 is lesser";
+       document.getElementById("id").innerHTML=result;
+       console.log(result);
+
+       let results=(num2>num1)?"num2 is greater":"num2 is lesser";
+       console.log(results);
+
+
+
+       let mark=50;
+       let result1=(mark>49)?"pass":"fail";
+       console.log(result1);
+
+       let marks=prompt('enter your mark');
+       let result2=(mark>49)?"pass":"fail";
+       console.log(result2);
+
+    </script> -->
+
+
+    <script>
+    // QUE 1)Check the age to determine the eligibility to vote
+
+    // let age=prompt('enter your age');
+    //    let votes=(age>=18)?"eligible":"not eligible";
+    //    console.log(votes);
+
+    //    let age=prompt(' your age');
+    //    let votes=(age>=18)?"eligible":"not eligible";
+    //    document.getElementById("id").innerHTML=votes;
+    //    console.log(votes);
+
+    //QUE2)Programe to check whether the number is positive or negative?
+
+    let number=prompt('enter number');
+       let answer=(number>0)?"positive":"negative";
+       console.log(answer);
+       
+
+    
+</script>
+</body>
+</html>
